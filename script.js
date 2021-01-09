@@ -1,3 +1,4 @@
+//このスクリプトのオーナーはmiemoです。
   //変数の宣言
 var time;
 var interval_work_id = null;　//25分タイマーのid、重複押しを避けるため
