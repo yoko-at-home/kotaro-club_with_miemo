@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+        <link rel="icon" href="assets/icon/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="琥太郎くんのポモドーロタイマーです。" />
+    <link rel="apple-touch-icon" href="assets/img/logo192.png" />
+    <link rel="manifest" href="assets/icon/manifest.json" />
+     <meta property="og:site_name" content="琥太郎くんのポモドーロタイマーです。" />
+     <meta property="og:image" content="assets/icon/media/kota.9831b1c0.jpg" />
+    <title>Meow You Ready?</title>
+  <link rel="stylesheet" href="styles.css">
+    <title>ボモドーロタイマー</title>
+  <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+
+<body>
+  <main>
+    <div class="container">
+      <div class='left'>
+        <h1 className='title' id='kotaro'>
+            Meow You Ready?
+          </h1>
+        <div class="controls__wrapper">
+                <div id="timer" style="height:10rem;">
+                    <p></p>
+                </div>
+                <div class="controls">
+                    <button type="button" class="btn_start" id="workButton">25分</button>
+                    <button type="button" class="btn_start" id="breakButton"> 5分</button>
+                </div>
+                <div class="controls">
+                    <button type="button" class="btn_start" id="stopButton">stop</button>
+                    <button type="btn" class="btn_start" id="resetButton">reset</button>
+                <!-- </div> -->
+            </div>
+        </div>
+      </div>
+      <div class='right'>
+          <div class='composition'>
+            <a
+              href='https://over40webclub.netlify.app/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <img
+                class='composition__photo'
+                src='assets/img/icon.png'
+                alt='Over 40 Web Clubのホームページにリンクしています'
+              />
+            </a>
+          </div>
+        </div>
+        </div>
+        <div class='container__ad_side'>
+          <div className='ad'>ポモドーロタイマーの使い方</div>
+          <ul style="padding-left: 1rem">
+            <li>タスクを決める</li>
+            <li>25分集中 </li>
+            <li>ニャーと聞こえたら5分休憩</li>
+          </ul>
+          深呼吸したり、瞑想したり、仕事とはまったく関係のないことをして脳を休ませ、
+          ポモドーロを4回した後に長い休憩（20〜30分）を取ると効果が絶大だそうです。
+          <div className='ad'>琥太郎くんが鳴くよ♪</div>
+        </div>
+        </div>
+      </main>
+      <script src="script.js"></script>
+</body>
+</html>
