@@ -23,6 +23,9 @@ body {
   margin:0;
 }
 
+a {
+  text-decoration: none;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -67,12 +70,15 @@ button{
   padding: 0.5rem;
   margin: 0 auto;
 }
-.title {
+.author {
+  display: inline-block;
+  width: 100%;
   font-size: 1rem;
+  font-weight: 600;
   line-height: 1.5rem;
   color: purple;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(219, 221, 212, 0.5);
   border-radius: 5px;
   z-index: 3;
   padding: 0.5rem;
@@ -108,10 +114,8 @@ background-position: left;
 .container__ad_side {
   display:none;
 }
-footer{
-  /* display: none; */
-  margin:0;
-  padding:0;
+footer {
+  height: 20vh;
 }
 .container__ad_bottom {
 display: grid;
@@ -254,6 +258,13 @@ ul li{
   width: 5rem;
   padding:0.5rem;
 }
+.composition div{
+  position: absolute;
+  bottom:6rem;
+  left: 2rem;
+  width: 15rem;
+  padding:0.5rem;
+}
 .composition__photo:hover{
   outline:0.5rem solid rgb(192, 209, 117,0.7);
   -webkit-transform:scale(1.05) translateY(-0.5rem);
@@ -262,6 +273,16 @@ ul li{
   box-shadow:0 2.5rem 4rem rgba(0,0,0,0.5);
   z-index:20}
   .composition__photo:not(:hover){-webkit-transform:scale(0.95);
+  transform:scale(0.95)}
+
+.composition div:hover{
+  outline:0.5rem solid rgb(192, 209, 117,0.7);
+  -webkit-transform:scale(1.05) translateY(-0.5rem);
+  transform:scale(1.05) translateY(-0.5rem);
+  -webkit-box-shadow:0 2.5rem 4rem rgba(0,0,0,0.5);
+  box-shadow:0 2.5rem 4rem rgba(0,0,0,0.5);
+  z-index:20}
+  .composition div:not(:hover){-webkit-transform:scale(0.95);
   transform:scale(0.95)}
 
 .container__ad_bottom:hover{
@@ -292,7 +313,7 @@ background-position: left;
 .h1 {
   font-size: 2.3rem;
   line-height: 2.3rem;
-  color: purple;
+  color: purple!important;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.2);
   border-radius: 5px;

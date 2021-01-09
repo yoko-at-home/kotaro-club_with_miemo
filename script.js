@@ -87,7 +87,8 @@ var timer_type = null; //タイマーの区別、25分タイマーは1500、5分
               show_timer()
               //0になったら終了を表示
             } else {
-              document.getElementById('timer').style.color = 'red'
+              document.getElementById('timer').style.color = '#f29d13'
+              document.getElementById('timer').style.fontSize = '4rem'
               document.getElementById('timer').innerHTML = '終了!'
               PlaySound() //******************yoko
               clearInterval(interval_work_id)
@@ -98,8 +99,8 @@ var timer_type = null; //タイマーの区別、25分タイマーは1500、5分
         function show_timer() {
             var second = time % 60;
             var minute = (time - second) / 60;
-            document.getElementById('timer').style.color = "black";
-            document.getElementById('timer').style.fontSize = "80px";
+            document.getElementById('timer').style.color = 'rgb(32, 5, 102)'
+            document.getElementById('timer').style.fontSize = "5rem";
             document.getElementById('timer').innerHTML = ("0" + minute).slice(-2) + ":" + ("0" + second).slice(-2);
         }
         window.onload = function () {
