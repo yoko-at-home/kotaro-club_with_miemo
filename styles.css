@@ -139,7 +139,10 @@ grid-template-columns: 1fr 1fr;
   font-weight: 600;
   line-height: 1rem;
   color: purple;
+  display:inline;
+  background-color: rgba(218, 235, 183, 0.5);
   /* text-align: center; */
+  border-radius: 5px;
   z-index: 3;
   padding:0.5rem;
   text-overflow: clip;
