@@ -89,7 +89,7 @@ var timer_type = null; //タイマーの区別、25分タイマーは1500、5分
             } else {
               document.getElementById('timer').style.color = '#f29d13'
               document.getElementById('timer').style.fontSize = '4rem'
-              document.getElementById('timer').innerHTML = '終了〜!'
+              document.getElementById('timer').innerHTML = 'Over!'
               PlaySound() //******************yoko
               clearInterval(interval_work_id)
               clearInterval(interval_break_id)
