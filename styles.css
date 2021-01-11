@@ -39,7 +39,17 @@ main{
   width: 100vw;
   margin: 0;
 }
-
+h1{
+  color:rgb(158, 175, 4);
+  text-shadow: 1px 0 8px #fff;
+}
+h1:hover{
+  color:rgb(158, 175, 4);
+  font-size: 4rem;
+  opacity: 1;
+  text-shadow: 1px 0 8px rgb(164, 211, 88);
+  transition: opacity 0.3s ease-in 0.4s;
+}
 button{
   outline: 0;
   color:rgb(57, 45, 63);
@@ -48,6 +58,12 @@ button{
 /* hover{
   pointer-events: painted;
 } */
+#timer{
+    text-shadow: 3px 0 8px rgb(228, 238, 212);
+}
+.clock:hover{
+    text-shadow: 1.5px 0 8px rgb(164, 211, 88);
+}
 .title {
   font-size: 2rem;
   line-height: 2rem;
@@ -76,9 +92,10 @@ button{
   font-size: 1rem;
   font-weight: 600;
   line-height: 1.5rem;
-  color: purple;
+  /* color: rgb(241, 231, 241); */
   text-align: center;
-  background-color: rgba(219, 221, 212, 0.5);
+  text-shadow: 1px 1px 1px rgb(159, 5, 173);
+  /* background-color: rgba(219, 221, 212, 0.5); */
   border-radius: 5px;
   z-index: 3;
   padding: 0.5rem;
@@ -264,7 +281,7 @@ ul li{
   padding:0.5rem;
 }
 .composition__photo:hover{
-  outline:0.5rem solid rgb(192, 209, 117,0.7);
+  outline:0.5rem solid rgb(192, 209, 117,0.9);
   -webkit-transform:scale(1.05) translateY(-0.5rem);
   transform:scale(1.05) translateY(-0.5rem);
   -webkit-box-shadow:0 2.5rem 4rem rgba(0,0,0,0.5);
@@ -274,7 +291,7 @@ ul li{
   transform:scale(0.95)}
 
 .composition div:hover{
-  outline:0.5rem solid rgb(192, 209, 117,0.7);
+  outline:0.3rem solid rgba(128, 0, 128, 0.8);
   -webkit-transform:scale(1.05) translateY(-0.5rem);
   transform:scale(1.05) translateY(-0.5rem);
   -webkit-box-shadow:0 2.5rem 4rem rgba(0,0,0,0.5);
