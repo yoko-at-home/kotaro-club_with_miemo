@@ -89,25 +89,10 @@ button{
   padding: 0.5rem;
   margin: 0 auto;
 }
-.author {
-  display: inline-block;
-  width: 100%;
-  font-size: 1rem;
-  font-weight: 600;
-  line-height: 1.5rem;
-  /* color: rgb(241, 231, 241); */
-  text-align: center;
-  /* background-color: rgba(219, 221, 212, 0.5); */
-  border-radius: 5px;
-  z-index: 3;
-  padding: 0.3rem;
-  margin-bottom: -0.5rem;
-  margin-top:2rem;
+.author{
+  display: none;
 }
-.author:hover{
-  font-size:0.8rem;
-    text-shadow: 1px 0 1px rgb(159, 5, 173);
-}
+
 .text_timerlabel {
   font-size: 2rem;
   line-height: 1.5rem;
@@ -317,7 +302,25 @@ ul li{
   transform:scale(0.95)}
 
   @media(min-width: 760px){
-  .container {
+.author {
+  display: inline-block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.5rem;
+  /* color: rgb(241, 231, 241); */
+  text-align: center;
+  /* background-color: rgba(219, 221, 212, 0.5); */
+  border-radius: 5px;
+  z-index: 3;
+  padding: 0.3rem;
+  margin-bottom: -0.5rem;
+  margin-top:2rem;
+}
+.author:hover{
+  font-size:0.8rem;
+    text-shadow: 1px 0 1px rgb(159, 5, 173);
+}  .container {
   width: 80%;
   height: 90vh;
   text-align: center;
